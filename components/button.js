@@ -29,7 +29,6 @@ template.innerHTML = `
 `;
 
 class Button extends HTMLElement{
-  static formAssociated = true
   constructor() {
     super(); 
     this.attachShadow({ mode: 'open' });
