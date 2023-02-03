@@ -1,0 +1,22 @@
+.card {
+  height: 19rem;
+  width: 19rem;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.card > .infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid;
+}/*# sourceMappingURL=cardEcole.css.map */
