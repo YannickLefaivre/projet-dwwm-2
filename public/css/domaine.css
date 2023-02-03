@@ -1,0 +1,54 @@
+.main {
+  background-color: aquamarine;
+  height: 90vh;
+  display: flex;
+ 
+}
+
+
+.left_main {
+  background-color: rgb(239, 149, 40);
+  flex: 1 1 auto;
+}
+.left_main > h4 {
+  margin-left: 10px;
+}
+
+.right_main {
+  background-color: rgb(255, 255, 255);
+  width: 100;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input::placeholder{
+text-align: center;
+}
+#message{
+max-width: 45vw;
+min-width: 45vw;
+font-size: large;
+}
+.right_input{
+  display: flex;
+  justify-content: space-evenly;
+}
+.input_right{
+height: 50px;
+width: 20rem;
+margin: 3px;
+font-size: large;
+}
+.button{
+  width: 50vh;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 65, 255);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 10px;
+}
