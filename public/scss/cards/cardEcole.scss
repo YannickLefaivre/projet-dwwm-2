@@ -5,10 +5,8 @@ $card-blur : 10px;
 @function PxToRem($px) {
   @return $px / 16
 }
-h1{
-  color: red;
-}
-.card-ecole {
+
+.card{
   height: PxToRem($card-height)+rem;
   width: PxToRem($card-height)+rem;
   background-size: cover;
