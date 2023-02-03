@@ -1,4 +1,4 @@
-## PORJECT DELTAT 
+## PORJECT DELTA
 
 1. Pour commencer, vous devez cloner le dépôt GitHub en utilisant la commande git clone https://github.com/YannickLefaivre/projet-dwwm-2.git dans votre terminal.
 2. Une fois le dépôt cloné, naviguez vers le répertoire du projet en utilisant la commande cd nom-du-dépôt.
