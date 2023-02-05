@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+$card-width : 250;
+// $card-height:405;
+$pad : 25;
+$bg-color : #F3F3F3;
+
+@function PxToRem($px) {
+  $result : calc($px / 16);
+  @return $result +rem
+}
+
+.card_comment {
+  width: PxToRem($card-width);
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: $bg-color;
+  padding: PxToRem($pad);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+
+  &>h4 {
+    font-size: x-large;
+  }
+
+  &>.card_comment_infos {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+   
+  }
+
+  &>p {
+    font-style: italic;
+    font-weight: 100;
+  }
+}
+.card_comment_infos > span{
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: small;
+  margin-top: PxToRem(5);
+}
