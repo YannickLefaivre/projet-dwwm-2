@@ -1,16 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
-
+@import "../utils/utils.scss";
 $card-width : 328;
-$card-height:200;
+$card-height: 200;
 
 $card-blur : 10px;
 
-@function PxToRem($px) {
-  $result : calc($px / 16);
-  @return $result + rem;
-}
-
-.school_card{
+.school_card {
   height: PxToRem($card-height);
   width: PxToRem($card-width);
   background-size: cover;
@@ -35,10 +29,11 @@ $card-blur : 10px;
   }
 }
 
-.school_infos > p{
+.school_infos>p {
   font-size: small;
   font-weight: 200;
 }
-.school_infos > h4{
+
+.school_infos>h4 {
   font-size: xx-large;
 }

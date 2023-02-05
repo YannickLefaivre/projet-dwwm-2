@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf') format("ttf");
+}
+@function PxToRem($px) {
+  $result : calc($px / 16);
+  @return $result +rem;
+}
