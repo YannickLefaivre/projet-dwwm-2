@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/scss/cards/cardEcole.css">
+  <link rel="stylesheet" href="/scss/cards/schoolCard.css">
+  <link rel="stylesheet" href="/scss/cards/cardComment.css">
   <title>Document</title>
 </head>
 <body>
-<%- include(`../../public/components/cardEcole`, { name: "Julia Nicolas", location: "Fort de France", url: "https://la1ere.francetvinfo.fr/image/edhAdzO5IAVFW9qy-1bGJebcSv8/600x400/outremer/2019/10/08/5d9bc72b82d7c_college_1-1184909.jpg" }) %>
+<%- include(`../../public/components/cardEcole`, { name: "Julia Nicolas", location: "Fort de France,Martinique", url: "https://la1ere.francetvinfo.fr/image/edhAdzO5IAVFW9qy-1bGJebcSv8/600x400/outremer/2019/10/08/5d9bc72b82d7c_college_1-1184909.jpg" }) %>
+<%- include(`../../public/components/cardComment`,{name :"Oriannna Sipher", grade:"Terminal L", school:"Lycée Bellevue", comment : "Je suis un commentaire complétement inutile que j'écris en écoutant \"King Snipe\” by Gucci Mane & Kodak Black"}) %>
 
 </body>
 </html>
