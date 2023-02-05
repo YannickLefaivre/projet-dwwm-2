@@ -1,7 +1,17 @@
 import express from "express";
 import ejs from "ejs"
 import * as url from 'url';
-import { dirname } from "path";
+import { faker } from '@faker-js/faker';
+// Obtenir des fausses données 
+// https://fakerjs.dev Lien de la documentation 
+const fakeData = {
+  name : faker.name.fullName(),
+  email : faker.internet.email(),
+  city : faker.address.cityName(), 
+  image :faker.image.business()   
+}
+
+
 const app = express()
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 // Voir le fichier Views || https://expressjs.com/fr/guide/using-template-engines.html
@@ -13,7 +23,7 @@ app.use(express.static(__dirname +"public"))
 // Les méthods http GET POST PUT & DELETE attendent une request et une réponse 
 // https://en.wikipedia.org/wiki/Request–response
 app.get("/", (req,res) => {
-  res.render("test.ejs")
+  res.render("test.ejs", {fake: fakeData} )
   // on envoie la page ejs au navigateur qui avant va être compilé en html , 
 })
 

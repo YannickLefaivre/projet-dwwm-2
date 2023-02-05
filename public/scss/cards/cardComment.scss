@@ -1,9 +1,9 @@
 @import "../utils/utils.scss";
+
 $card-width : 250;
 // $card-height:405;
 $pad : 25;
 $bg-color : #F3F3F3;
-
 
 .card_comment {
   width: PxToRem($card-width);
@@ -25,7 +25,6 @@ $bg-color : #F3F3F3;
     display: flex;
     flex-direction: column;
     line-height: 0;
-
   }
 
   &>p {
