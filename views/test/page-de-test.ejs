@@ -4,15 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Acceuil</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <%- include("../components/navbar.ejs") %>
-
-    <form action="/proceed_form" method="post">
-      <%- include("../components/button.ejs", {type: "submit", label: "Envoyer le formulaire"}) %>
-    </form>
-
-    <%- include("../components/footer.ejs") %>
+   <div class="comment-card">
+    Test commentCard
+   </div>
   </body>
 </html>

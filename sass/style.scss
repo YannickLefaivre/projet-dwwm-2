@@ -1,174 +1,46 @@
 /* 
-A utiliser pour plus tard : une fois qu'on aura appris à utiliser les partials SCSS
-
-@import "./components/_button.scss";
-@import "./components/_commentCard.scss";
-@import "./components/_filter.scss";
-@import "./components/_footer.scss";
-@import "./components/_hero.scss";
-@import "./components/_imageEcoleCard.scss";
-@import "./components/_navbar.scss";
-@import "./components/_tag.scss"; 
-
+  A utiliser pour plus tard : une fois qu'on aura appris à utiliser les partials SCSS
 */
 
-/* # Variables */
+/* # Utilitaires */
 
-/* ## Colors */
+/* ## Variables */
 
-$primary-color: #45577a;
-
-
-/* # Globale styles */
-
-body {
-  background-color: #ddd;
-  color: #111;
-  font-family: Arial, sans-serif;
-}
-
-img {
-  height: 33.33333206176758px;
-  width: 45.83333206176758px;
-  margin: 29.08px;
-}
-
-p {
-  font-family: Inter;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 19px;
-}
-
-/* # Specific styles */
-
-/* DEBUT DE LA NAVBAR */
-
-.navbar {
-  position: sticky;
-  position: -webkit-sticky; /* Safari */
-  top: 0;
-
-  background-color: #ddd;
-}
-
-/* Partie recherche avec logo, barre de recherche, bouton connexion */
-.recherche {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-/* LOGO */
-.recherche img {
-  max-height: 65px;
-  object-fit: cover;
-  mix-blend-mode: darken;
-}
-
-/* Barre de recherche */
-.recherche input[type='text'] {
-  width: 65%;
-  padding: 7px;
-  border-radius: 5px;
-
-  font-size: 1.1rem;
-}
-
-/* Bouton de connexion */
-.connexion {
-  padding: 7px;
-  border-radius: 5px;
-
-  background-color: limegreen;
-  color: #fff;
-}
-
-/* Menu en-dessous de la partie recherche, avec les boutons Accueil, Formations etc. */
-.menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0;
-
-  background-color: #45577a;
-  color: #fff;
-}
-
-/* FIN DE LA NAVBAR */
-
-.filter {
-  /* rectangle */
-  display: flex;
-  align-items: center;
-  height: 95px;
-  width: 1683px;
-  border-radius: 10px;
-  margin: 23px auto;
-  background: #f3f3f3;
-}
-
-.tag {
-  text-align: center;
-  background-color: #2274a5;
-  color: white;
-  border-radius: 5px;
-  padding: 5px;
-  width: max-content;
-}
-
-.button {
-  display: flex;
-  flex-direction: row;
-  column-gap: 15px;
-  padding: 0.75em 1.125em; /* 0.75em = 12px et 1.125em = 18px */
-  border: transparent;
-  border-radius: 6px;
-  background-color: rgba(69, 87, 122, 1);
-  color: #fff;  
+@import './utilitaires/variables/fonts';
+@import './utilitaires/variables/colors';
 
 
-  &:hover{
-    background-color: rgba(69, 87, 122, 0.5);
-  }
-  
-  .button-icon {
-    font-size: 1.375rem; /* 22px / body font-size (16px) */
-  }
+/* # Templates */
 
-  .button-text {
-    font-size: 1.375rem; /* 22px / body font-size (16px) */
-  }
-}
+/* ## Sélecteurs d'élément */
 
-.button-see-more {
-  @extend .button;
+@import './templates/body';
+@import './templates/image';
+@import './templates/paragraph';
 
-  background-color: transparent;
-  border: 2px solid $primary-color;
-}
 
-.card {
-  width:544px ;
-  height: 304px;
-  
-  background-size:cover;
-  backdrop-filter:blur(10px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius:5px;
+/* # Atoms */
 
-  .infos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    height:100%;
-    width : 100%;
-    background :rgba(0,0,0,0.5);
-    border: 1px solid ;
-  }
-}
+@import './atoms/button';
+@import './atoms/tag';
 
+
+/* # Molecules */
+
+@import './molecules/commentCard';
+@import './molecules/filter';
+@import './molecules/imageEcoleCard';
+@import './molecules/commentCard';
+
+
+/* # Organisms */
+
+@import './organisms/hero';
+@import './organisms/navbar';
+@import './organisms/footer';
+
+
+/* # Pages */
+
+@import './pages/contact';
+@import './pages/domaines';

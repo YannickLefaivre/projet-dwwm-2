@@ -1,35 +1,129 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Acceuil</title>
-    <link rel="stylesheet" href="css/domaine.css" />
-  </head>
+<html lang="fr">
+   <%# Head tag + content %> 
+   <%- include("../organisms/head.partial.ejs", {pageTitle: "Recherche par domaines"}) %>
+
   <body>
-    <%- include("../components/navbar.ejs") %>
+    <%- include("../organisms/navbar.partial.ejs") %>
 
-    <main class="main">
-      <section class="left_main">
-          <h4>LOGO </h4>
+    <main>
+      <section>
+        <nav>
+          <ol>
+            <li><a href="#">Accueil</a></li>
+            <li>Domaines</li>
+          </ol>
+        </nav>
+        <h2>Domaines</h2>
+        <span></span>
       </section>
-
-      <form method="post" class="right_main">
-          <h1>Nous contacter </h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga officiis nemo placeat fugit quod ipsa nesciunt expedita tenetur nisi minima!!</p>
-          <section class="right_input">
-              <input class="input_right" type="text" placeholder="Nom" name="nom">
-              <input class="input_right" type="text" placeholder="Prenom" name="Prenom">
-          </section>
-          <section class="right_input">
-              <input class="input_right" type="tel" placeholder="06 96 00 00 00 " name="tel" pattern="[0-9]+" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" / required>
-              <input class="input_right" type="email" placeholder="email@gmail.com" name="email">
-          </section>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <button type="submit" class="button"> Envoyer </button>
-
+      <form action="post">
+        <input
+          type="text"
+          name="search"
+          id="input1"
+          placeholder="Formation, mot-clé..." />
+        <select name="secteur" id="input2"></select>
+        <input type="submit" value="" />
       </form>
+      <section class="filter-group">
+        <section class="filter">
+          <h3>Domaines</h3>
+          <div class="arrow"></div>
+          <div class="filter-element">
+            <input type="checkbox" name="domaines" id="agriculture" />
+            <label for="agriculture">Agriculture</label>
+          </div>
+          <div class="filter-element">
+            <input type="checkbox" name="domaines" id="armee" />
+            <label for="armee">Armée</label>
+          </div>
+          <div class="filter-element">
+            <input type="checkbox" name="domaines" id="arts" />
+            <label for="arts">Arts</label>
+          </div>
+          <div class="filter-element">
+            <input type="checkbox" name="domaines" id="banque" />
+            <label for="banque">Banque</label>
+          </div>
+          <div class="filter-element">
+            <input type="checkbox" name="domaines" id="commerce" />
+            <label for="commerce">Commerce</label>
+          </div>
+          <div class="filter-element">
+            <input type="checkbox" name="domaines" id="informatique" />
+            <label for="informatique">Informatique</label>
+          </div>
+        </section>
+        <section class="filter">
+          <h3>Types de formations</h3>
+          <div class="arrow"></div>
+          <div class="filter-element">
+            <input type="checkbox" name="types" id="certifiantes" />
+            <label for="certifiantes">Certifiantes</label>
+          </div>
+          <div class="filter-element">
+            <input type="checkbox" name="types" id="diplomantes" />
+            <label for="diplomantes">Diplômantes</label>
+          </div>
+          <div class="filter-element">
+            <input type="checkbox" name="types" id="professionnalisantes" />
+            <label for="professionnalisantes">Professionnalisantes</label>
+          </div>
+        </section>
+        <section class="filter">
+          <h3>Secteurs géographiques</h3>
+          <div class="arrow"></div>
+          <div class="filter-element">
+            <input type="checkbox" name="secteurs" id="nord-atlantique" />
+            <label for="nord-atlantique">Nord Atlantique</label>
+          </div>
+          <div class="filter-element">
+            <input type="checkbox" name="secteurs" id="nord-caraibe" />
+            <label for="nord-caraibe">Nord Caraïbe</label>
+          </div>
+          <div class="filter-element">
+            <input type="checkbox" name="secteurs" id="centre" />
+            <label for="centre">Centre</label>
+          </div>
+          <div class="filter-element">
+            <input type="checkbox" name="secteurs" id="sud" />
+            <label for="sud">Sud</label>
+          </div>
+        </section>
+      </section>
+      <section class="resultats-group">
+        <section class="filters">
+          <input type="checkbox" name="box" id="f--agriculture" />
+          <label for="f--agriculture">Agriculture</label>
+          <input type="checkbox" name="box" id="f--armee" />
+          <label for="f--armee">Armée</label>
+          <input type="checkbox" name="box" id="f--arts" />
+          <label for="f--arts">Arts</label>
+          <input type="checkbox" name="box" id="f--banque" />
+          <label for="f--banque">Banque</label>
+        </section>
+        <section class="resultat-element">
+          <h3>Titre professionnel Développeur Web/Web Mobile</h3>
+          <p>CFA Numérique Martinique</p>
+          <address>97200, Fort-de-France</address>
+          <a href="#">En savoir plus</a>
+        </section>
+        <section class="resultat-element">
+          <h3></h3>
+          <p></p>
+          <address></address>
+          <a href="#"></a>
+        </section>
+        <section class="resultat-element">
+          <h3></h3>
+          <p></p>
+          <address></address>
+          <a href="#"></a>
+        </section>
+      </section>
+    </main>
 
-    <%- include("../components/footer.ejs") %>
+    <%- include("../organisms/footer.partial.ejs") %>
   </body>
 </html>
