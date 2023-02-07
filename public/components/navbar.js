@@ -1,7 +1,10 @@
-class NavigationBar extends HTMLElement {
-  constructor() {
-    super();
-  }
-}
-
-window.customElements.define("navigation-bar-component", NavigationBar);
+<nav class="nav_bar">
+    <ul class="nav_content">
+        <li class ="nav_text">Accueil</li>
+        <li class ="nav_text">Formations</li>
+        <li class ="nav_text">Écoles</li>
+        <li class ="nav_text">Domaines</li>
+        <li class ="nav_text">Ressources</li>
+        <li class ="nav_text">Contact</li>
+    </ul>
+</nav>

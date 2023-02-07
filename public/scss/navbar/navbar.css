@@ -1,0 +1,30 @@
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1920px;
+    height: 80px;
+    background-color:#434343;
+    gap: 82px;
+}
+
+.nav_content {
+    list-style-type: none;
+}
+
+.nav_text{
+    color: #FFFFFF;
+    display: inline;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.015em;
+    padding-left: 82px;
+    padding-right: 82px;
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+}
