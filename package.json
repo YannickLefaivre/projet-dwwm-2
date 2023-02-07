@@ -1,15 +1,15 @@
 {
+  "name": "projet-dwwm-2",
+  "version": "0.1.9-preAlpha",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2"
   },
-  "scripts": {
-    "dev": "nodemon app.js"
-  },
-  "type": "module",
   "devDependencies": {
-    "@faker-js/faker": "^7.6.0",
     "nodemon": "^2.0.20"
-  },
-  "types": "module"
+  }
 }

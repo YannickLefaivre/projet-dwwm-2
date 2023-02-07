@@ -18,3 +18,4 @@ Lorsqu'un fichier contient deux mots, il est recommandé d'utiliser la conventio
 
 ### Description du project
 Ce projet est un annuaire pour les écoles de Martinique, qui permettra aux utilisateurs de rechercher et de trouver facilement des informations sur les écoles de cette région.
+

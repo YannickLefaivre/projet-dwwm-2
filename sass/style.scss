@@ -1,0 +1,46 @@
+/* 
+  A utiliser pour plus tard : une fois qu'on aura appris à utiliser les partials SCSS
+*/
+
+/* # Utilitaires */
+
+/* ## Variables */
+
+@import './utilitaires/variables/fonts';
+@import './utilitaires/variables/colors';
+
+
+/* # Templates */
+
+/* ## Sélecteurs d'élément */
+
+@import './templates/body';
+@import './templates/image';
+@import './templates/paragraph';
+
+
+/* # Atoms */
+
+@import './atoms/button';
+@import './atoms/tag';
+
+
+/* # Molecules */
+
+@import './molecules/commentCard';
+@import './molecules/filter';
+@import './molecules/imageEcoleCard';
+@import './molecules/commentCard';
+
+
+/* # Organisms */
+
+@import './organisms/hero';
+@import './organisms/navbar';
+@import './organisms/footer';
+
+
+/* # Pages */
+
+@import './pages/contact';
+@import './pages/domaines';

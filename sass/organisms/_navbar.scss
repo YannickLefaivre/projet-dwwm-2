@@ -1,0 +1,55 @@
+/* Code d'Axel Arratus (À modifier si besoin) pour créer le composant navbar */
+
+.navbar {
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+
+  background-color: #ddd;
+}
+
+/* Partie recherche avec logo, barre de recherche, bouton connexion */
+.recherche {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* LOGO */
+.recherche img {
+  width: 15%;
+  max-height: 65px;
+  object-fit: cover;
+  mix-blend-mode: darken;
+}
+
+/* Barre de recherche */
+.recherche input[type='text'] {
+  width: 65%;
+  padding: 7px;
+  border-radius: 5px;
+
+  font-size: 1.1rem;
+}
+
+/* Bouton de connexion */
+.connexion {
+  padding: 7px;
+  border-radius: 5px;
+
+  background-color: limegreen;
+  color: #fff;
+}
+
+/* Menu en-dessous de la partie recherche, avec les boutons Accueil, Formations etc. */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+
+  background-color: #45577a;
+  color: #fff;
+}
+
+/* FIN DE LA NAVBAR */

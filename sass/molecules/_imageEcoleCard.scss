@@ -1,0 +1,23 @@
+.card {
+  width:544px ;
+  height: 304px;
+  
+  background-size:cover;
+  backdrop-filter:blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:5px;
+}
+
+.infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  height:100%;
+  width : 100%;
+  background :rgba(0,0,0,0.5);
+  border: 1px solid ;
+}

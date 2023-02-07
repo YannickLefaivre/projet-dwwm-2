@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <%# Head tag + content %> 
+  <%- include("../organisms/head.partial.ejs", {pageTitle: "Contact"}) %>
+
+  <body>
+    <%- include("../organisms/navbar.partial.ejs") %>
+
+    <main class="main">
+      <section class="left_main">
+        <h4>LOGO</h4>
+      </section>
+
+      <form method="post" class="right_main">
+        <h1>Nous contacter</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga officiis
+          nemo placeat fugit quod ipsa nesciunt expedita tenetur nisi minima!!
+        </p>
+        <section class="right_input">
+          <input class="input_right" type="text" placeholder="Nom" name="nom" />
+          <input
+            class="input_right"
+            type="text"
+            placeholder="Prenom"
+            name="Prenom" />
+        </section>
+        <section class="right_input">
+          <input
+            class="input_right"
+            type="tel"
+            placeholder="06 96 00 00 00 "
+            name="tel"
+            pattern="[0-9]+"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+            required />
+          <input
+            class="input_right"
+            type="email"
+            placeholder="email@gmail.com"
+            name="email" />
+        </section>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button type="submit" class="button">Envoyer</button>
+      </form>
+    </main>
+
+    <%- include("../organisms/footer.partial.ejs") %>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+/* ## Page de recherche par domaines */
+
+.resultats-group > .filters input {
+  display: none;
+}
+
+.resultats-group > .filters label {
+  display: inline-block;
+  background-color: #999;
+  margin: 0 .4em;
+  padding: .3em .8em;
+  border-radius: 5px;
+  transition: all .4s ease;
+}
+.resultats-group > .filters input:checked + label {
+  background-color: aqua;
+}
