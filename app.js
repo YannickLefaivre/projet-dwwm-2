@@ -11,7 +11,6 @@ const fakeData = {
   image :faker.image.business()   
 }
 
-
 const app = express()
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 // Voir le fichier Views || https://expressjs.com/fr/guide/using-template-engines.html
@@ -30,3 +29,4 @@ app.get("/", (req,res) => {
 app.listen(3000,
   console.log("Listen to port :3000"),
   )
+  
