@@ -1,0 +1,76 @@
+$background-color_1: #FFFFFF;
+$color_1: #45577A;
+$background-color_2: #45577A;
+$background-color_3: white;
+
+.card-Initiation {
+	margin: 10px;
+}
+.Initiation-info {
+	margin: 10px;
+	background-color: $background-color_1;
+	border-radius: 10px;
+	display: flex;
+
+	span {
+		margin: 0 250px;
+	}
+
+	.txt-right {
+		display: flex;
+		margin: 10px;
+		width: 100%;
+		h2 {
+			font-size: 16px;
+			margin-left: 20px;
+		}
+	}
+
+	.txt-left {
+		display: flex;
+		tag-component {
+			margin: 5px;
+		}
+	}
+}
+
+
+
+.en-tete {
+	display: flex;
+	align-items: center;
+	margin: 25px;
+	span {
+		background-color: $background-color_2;
+		width: 70%;
+		height: 10px;
+		margin: 10px;
+		line-height: 20px;
+	}
+	button {
+		background-color: $background-color_3;
+		border: #45577A 1px solid;
+		color: $color_1;
+		padding: 5px 3px;
+		width: 70px;
+	}
+}
+.card-temoignage {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+.temoignage-info {
+	margin: 10px;
+	width: 25%;
+	img {
+		width: 100%;
+	}
+	h2 {
+		margin: 10px;
+	}
+}
+p {
+	margin: 10px;
+}
+

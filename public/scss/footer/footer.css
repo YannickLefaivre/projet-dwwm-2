@@ -1,0 +1,28 @@
+footer {
+  text-align: center;
+}
+
+footer .footer_info {
+  border-bottom: white 2px solid;
+  width: 70%;
+  margin: 0 auto;
+}
+
+footer .footer_info ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+footer .footer_info ul li {
+  margin: 10px;
+}
+
+footer .footer_info ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer p {
+  font-size: 2rem;
+}

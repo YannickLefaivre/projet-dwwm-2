@@ -1,0 +1,78 @@
+.card-Initiation {
+  margin: 10px;
+}
+
+.Initiation-info {
+  margin: 10px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+}
+
+.Initiation-info span {
+  margin: 0 250px;
+}
+
+.Initiation-info .txt-right {
+  display: flex;
+  margin: 10px;
+  width: 100%;
+}
+
+.Initiation-info .txt-right h2 {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.Initiation-info .txt-left {
+  display: flex;
+}
+
+.Initiation-info .txt-left tag-component {
+  margin: 5px;
+}
+
+.en-tete {
+  display: flex;
+  align-items: center;
+  margin: 25px;
+}
+
+.en-tete span {
+  background-color: #45577A;
+  width: 70%;
+  height: 10px;
+  margin: 10px;
+  line-height: 20px;
+}
+
+.en-tete button {
+  background-color: white;
+  border: #45577A 1px solid;
+  color: #45577A;
+  padding: 5px 3px;
+  width: 70px;
+}
+
+.card-temoignage {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.temoignage-info {
+  margin: 10px;
+  width: 25%;
+}
+
+.temoignage-info img {
+  width: 100%;
+}
+
+.temoignage-info h2 {
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+}
