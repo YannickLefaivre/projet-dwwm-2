@@ -1,4 +1,6 @@
 {
+  "name": "@dwwm-promo-2/projet-delta",
+  "version": "0.1.0-0",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2"
