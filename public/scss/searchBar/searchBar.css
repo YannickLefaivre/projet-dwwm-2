@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* 
+* Classe pour l'accessibilité : permet au lecteur d'écran d'annoncer la présence d'un élément sans
+* qu'il soit visuellement visible.
+*
+*  voir l'explication à cette adresse : https://webaim.org/techniques/css/invisiblecontent/#techniques
+*/
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.search-bar-input, .search-bar-field {
+  background-color: #f2f2f2;
+}
+
+.search-bar-input:hover, .search-bar-input:focus, .search-bar-field:focus-within {
+  outline: 0 none;
+}
+
+.submit-button:focus-visible, .submit-button:focus, .submit-button:hover {
+  outline: 0.0625rem solid #3b6699;
+  outline-offset: 0px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.search-bar-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.125rem 1.5625rem;
+  border: 0.125rem solid #cccccc;
+  border-radius: 0.625rem;
+}
+.search-bar-field-keywords {
+  flex: 5;
+}
+.search-bar-field-location {
+  flex: 3;
+}
+.search-bar-field:focus-within {
+  outline: 0.09375rem inset #e6e6e6;
+}
+
+.search-bar-input {
+  width: 100%;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding-inline: 0.625rem;
+  border: 0px;
+}
+.search-bar-label {
+  width: 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (width >= 1500px) {
+  .search-bar-label {
+    width: 4%;
+  }
+}
+
+.search-bar-label-icon {
+  width: 100%;
+  height: 100%;
+  color: #8c8c8c;
+}
+
+.submit-button {
+  width: auto;
+  height: auto;
+  flex: 0.7;
+  background-color: #4D7FBA;
+  border: 0.0625rem solid #4D7FBA;
+  border-radius: 0.375rem;
+  padding: 0.3em 0.8em;
+}
+.submit-button:active {
+  color: #2d4e74;
+}
+.submit-button:hover {
+  cursor: pointer;
+}
+.submit-button-icon {
+  display: inline-block;
+  width: 60%;
+  height: 60%;
+  color: #FFFFFF;
+}/*# sourceMappingURL=searchBar.css.map */
