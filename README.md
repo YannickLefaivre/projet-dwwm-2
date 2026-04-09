@@ -1,6 +1,6 @@
 ## Mise à jour
 
-Ce projet a été abondonnée.
+Ce projet a été abondonné.
 
 ## PORJECT DELTA
 
