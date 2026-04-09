@@ -1,3 +1,7 @@
+## Mise à jour
+
+Ce projet a été abondonnée.
+
 ## PORJECT DELTA
 
 1. Pour commencer, vous devez cloner le dépôt GitHub en utilisant la commande git clone https://github.com/YannickLefaivre/projet-dwwm-2.git dans votre terminal.
