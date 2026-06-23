@@ -1,0 +1,4 @@
+%button-outline {
+  outline: PxToRem(1) solid adjust-color($color: $primary-color, $lightness: -10%);
+  outline-offset: 0px;
+}

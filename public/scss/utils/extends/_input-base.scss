@@ -1,0 +1,9 @@
+@import '../variables/colors';
+
+%input-background-color {
+  background-color: adjust-color($color: $light-color, $lightness: -5%);
+}
+
+%input-outline {
+  outline: 0 none;
+}
